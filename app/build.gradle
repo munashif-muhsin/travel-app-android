@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.google.firebase.crashlytics'
+//apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.travelpayouts.travel.app"
+        applicationId "com.example.app"
         minSdkVersion 24
         targetSdkVersion 30
         versionCode 1
@@ -38,6 +38,7 @@ android {
     packagingOptions {
         exclude 'META-INF/*.kotlin_module'
     }
+    ndkVersion '25.0.8775105'
 }
 
 dependencies {
